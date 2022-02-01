@@ -178,10 +178,8 @@ public class TestCase {
 			InformationEstimatorInterface myObject;
 			double value;
 			System.out.println("checking InformationEstimator");
-<<<<<<< Updated upstream
 			myObject = new InformationEstimator();
 			myObject.setSpace("3210321001230123".getBytes());
-=======
 
 			// Test Case 1 Target is not set
 			myObject = new InformationEstimator();
@@ -212,7 +210,6 @@ public class TestCase {
 					: "Target is not set. It should returns Double.MAX_VALUE. But it returns " + value;
 
 			myObject.setSpace("3210321001230123".getBytes());
->>>>>>> Stashed changes
 			myObject.setTarget("0".getBytes());
 			value = myObject.estimation();
 			assert (value > 1.9999) && (2.0001 > value)
